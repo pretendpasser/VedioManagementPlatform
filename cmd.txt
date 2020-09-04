@@ -1,0 +1,2 @@
+$env:GOPROXY = "https://mirrors.aliyun.com/go/proxy/"     
+go mod init go-cruud 
