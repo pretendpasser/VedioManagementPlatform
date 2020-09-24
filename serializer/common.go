@@ -40,16 +40,16 @@ type DataList struct {
 // TrackedErrorResponse 有追踪信息的错误响应
 type TrackedErrorResponse struct {
 	Response
-	TrackID		string	`json:track_id:`
+	TrackID		string	`json:"track_id"`
 }
 
 // BuildListResponse 列表构建器
 func BuildListResponse(items interface{}, total uint) Response {
 	return Response{
-		Data:	DataList{
+		Data: DataList{
 			Items:	items,
 			Total:	total,
-			},
+		},
 	}
 }
 
